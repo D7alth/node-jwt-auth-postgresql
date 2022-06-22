@@ -9,7 +9,7 @@ module.exports = function(app) {
         next();
     });
     app.post(
-        'api/auth/singup',
+        '/api/auth/signup',
         [
             verifySingUp.checkDuplicateUsernameOrEmail,
             verifySingUp.checkRolesExisted

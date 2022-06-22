@@ -5,7 +5,7 @@ const Role = db.role;
 const Op = db.Sequelize.Op;
 
 var jwt = require('jsonwebtoken'); 
-var bycrypt = require('bycrypt');
+var bcrypt = require('bcryptjs');
 
 exports.singup = (req, res) => {
     User.create({
